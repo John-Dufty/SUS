@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <button href="content.html" id="expand_button"><span id="hamburger_icon">&#9776;</span></button>
+        </div>
+        <pre id="pre">
+░██████╗██╗░░░██╗░██████╗
+██╔════╝██║░░░██║██╔════╝
+╚█████╗░██║░░░██║╚█████╗░
+░╚═══██╗██║░░░██║░╚═══██╗
+██████╔╝╚██████╔╝██████╔╝
+╚═════╝░░╚═════╝░╚═════╝░
+        </pre>
+        <p style="text-align:center; font-family: 'Courier New', monospace;">Enabling security professionals to leverage OSINT tools using customizable keyboard shortcuts</p>
+  <p>Description:</p>
+  <p>SUS is an extension that enables security professionals to gather vital information about IPs, Hashes, and URLs rapidly. By leveraging open-source intelligence tools, SUS performs API calls to gather community ratings, IOC's, and threat vectors, providing users with a comprehensive overview of potential security risks.</p>
+  <p>This is performed via the shortcut key while highlighting a string. The extension will automatically identify the string format and call the correlated API. File types are identified via MD5 hashes, with a future scope to include SHA-256 and SHA-1 hash types. URL identification is constrained by the domain and will not include specified pages.</p>
+  <p>Upon searching, the extension automatically stores the API call response within the user's clipboard for easy and quick access, allowing security analysts to make informed decisions based on the most up-to-date information. With SUS, users can streamline their workflow and stay ahead of potential security threats.</p>
+  <p>Setup Guide:</p>
+  <ol>
+    <li>To get started, navigate to the website <a href="https://www.virustotal.com/gui/home/search">https://www.virustotal.com/gui/home/search</a> and create an account. This step is essential to access the features and services provided by the platform.</li>
+    <li>Once you have created an account, sign in to your account and locate the link in the top right-hand corner of the page. This link will lead you to your API key, which is a unique identifier that enables you to access the platform's application programming interface (API).</li>
+    <li>Click on the link to access your API key, and then click the "Copy API key" button to copy the key to your clipboard. You will need this key to connect to the Virustotal API.</li>
+    <li>To access the SUS extension, locate the logo under the extension menu and click on it. This will open the extension in a new tab in your browser.</li>
+    <li>Once the extension is open, click on the "Options" button to access the settings menu. In the settings menu, locate the form where you can paste your API key. Carefully paste the key into the form and click on the "Save" button to save the changes.</li>
+    <li>Your API key is now connected to the SUS extension, and you can use the platform's features to scan files and URLs for viruses and malware.</li>
+  </ol>
+  <p>User Guide:</p>
+  <ol>
+    <li>Begin by selecting the desired IP, hash, or URL ensuring that only the relevant text is highlighted. It's important to note that hashes must be in MD5 format and URLs should only contain the domain segment.</li>
+    <li>Once you've highlighted the text, initiate the search by using the shortcut key combination, ALT+C. Wait until the text is no longer highlighted, indicating that the search has been completed.</li>
+    <li>The API response will be stored within the clipboard, allowing for quick and easy access to the information in JSON format. This information can be quickly pasted into a given ticket form to increase analyst efficiency.</li>
+  </ol>
+</div>
+            <p>
+                <a href="https://github.com/John-Dufty/SUS" target="_blank" style="color: black;">GitHub</a> | 
+                <a href="https://www.linkedin.com/in/john-dufty/" target="_blank" style="color: black;">LinkedIn</a>
+            </p>
+        </div>
+        <script src="set_api_key.js"></script>
+    </div>
+</body>
+</html>
+
