@@ -1,10 +1,3 @@
-░██████╗██╗░░░██╗░██████╗
-██╔════╝██║░░░██║██╔════╝
-╚█████╗░██║░░░██║╚█████╗░
-░╚═══██╗██║░░░██║░╚═══██╗
-██████╔╝╚██████╔╝██████╔╝
-╚═════╝░░╚═════╝░╚═════╝░
-        
 SUS is an extension that enables security professionals to gather vital information about IPs, Hashes, and URLs rapidly. By leveraging open-source intelligence tools, SUS performs API calls to gather community ratings, IOC's, and threat vectors, providing users with a comprehensive overview of potential security risks.
 
 This is performed via the shortcut key while highlighting a string. The extension will automatically identify the string format and call the correlated API. File types are identified via MD5 hashes, with a future scope to include SHA-256 and SHA-1 hash types. URL identification is constrained by the domain and will not include specified pages. 
