@@ -1,0 +1,52 @@
+#openai_response_popup, #openai_response_popup * {
+    all: initial;
+    font-size: 15px;
+}
+
+#openai_response_popup {
+    position: fixed;
+    top: 30px;
+    right: 35%;
+    z-index: 99999999;
+    background-color: #131727;
+    color: #ffffff;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    cursor: move;
+    box-shadow: 10px 10px 50px #a7a7a7;
+}
+
+div#openai_response_popup:before {
+    content: "";
+    height: 42px;
+    display: block;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/popup/logo.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 13px;
+}
+
+#openai_response_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#openai_response_close:hover {
+    color: red;
+}
+
+div#openai_response_popup_content {
+    color: #cdcbe5;
+    font-family: consolas, sans-serif, arial;
+}
